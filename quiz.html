@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activitée</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="quiz">
+  <div class="hero">
+    <canvas id="particles" class="particles"></canvas>
+    <div class="container glass">
+      <div class="quiz-header">
+        <h1 class="animate-title">Shape Your Dream Trip</h1>
+        <p>Question <span id="current-question">1</span> of <span id="total-questions">0</span></p>
+      </div>
+      <div class="progress-bar"><div id="progress" class="progress-glow"></div></div>
+      <div class="question-card">
+        <h2 id="question">Loading...</h2>
+        <div id="options" class="options-grid"></div>
+        <p id="selection-info"></p>
+      </div>
+      <button id="nextBtn" class="btn glow pulse" disabled>Next</button>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="rgba(255,255,255,0.3)"/>
+    </svg>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
